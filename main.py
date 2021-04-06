@@ -115,7 +115,7 @@ class Bullet(pygame.sprite.Sprite):
 
 class Powerup(pygame.sprite.Sprite):
     def __init__(self, center):
-        pygame.sprite.Sprite.__init__(self):
+        pygame.sprite.Sprite.__init__(self)
         self.type = random.choice(['sheild', 'gun'])
         self.image = powerup_images[self.type]
         self.image.set_colorkey(BLACK)
